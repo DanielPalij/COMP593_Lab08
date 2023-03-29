@@ -38,7 +38,7 @@ def create_relationships_table():
         FOREIGN KEY (person2_id) REFERENCES people (id)
     );
 """
-    cur.execute()
+    cur.execute(create_relationships_tbl_query)
     con.commit()
     con.close()
 
